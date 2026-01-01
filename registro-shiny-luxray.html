@@ -1,30 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Registro de Negociação – Shiny Luxray</title>
+  <meta charset="UTF-8">
+  <title>Registro • Shiny Luxray</title>
 
   <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #0b1020, #141a2f, #0b1020);
-      color: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
       margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #1a1a1a, #8b0000, #ffffff);
+      color: #ffffff;
     }
 
-    .card {
-      background: #0e1426;
+    .container {
+      max-width: 640px;
+      margin: 40px auto;
+      background: rgba(0, 0, 0, 0.55);
+      padding: 26px;
       border-radius: 18px;
-      box-shadow: 0 14px 38px rgba(0,0,0,0.7);
-      padding: 28px;
-      max-width: 540px;
-      width: 92%;
-      border: 1px solid rgba(255,215,0,0.25);
+      box-shadow: 0 10px 35px rgba(0,0,0,0.6);
     }
 
     h1 {
@@ -36,102 +30,110 @@
       text-align: center;
       font-weight: normal;
       font-size: 1rem;
-      color: #ffd966;
+      color: #ffd700;
       margin-top: 0;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 
-    .poke-img {
+    img {
       display: block;
-      margin: 0 auto 18px auto;
-      max-width: 160px;
-      filter: drop-shadow(0 0 10px rgba(255,215,0,0.6));
+      margin: 20px auto;
+      max-width: 180px;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
+      margin-top: 16px;
     }
 
     td {
-      padding: 10px 8px;
-      border-bottom: 1px solid rgba(255,255,255,0.15);
+      padding: 10px 6px;
+      border-bottom: 1px solid rgba(255,255,255,0.25);
     }
 
     td:first-child {
       font-weight: bold;
-      width: 48%;
+      width: 50%;
     }
 
     tr:last-child td {
       border-bottom: none;
     }
 
-    .footer {
-      margin-top: 22px;
-      font-size: 0.85rem;
-      color: #e6e6e6;
-      text-align: center;
-    }
-
-    .back {
+    a {
       display: block;
-      margin-top: 20px;
+      margin-top: 22px;
       text-align: center;
+      color: #ffd700;
       text-decoration: none;
-      color: #ffcb05;
       font-weight: bold;
     }
 
-    .back:hover {
-      text-decoration: underline;
+    .footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #eeeeee;
     }
   </style>
 </head>
 
 <body>
-  <div class="card">
-    <h1>⚡ Registro de Negociação</h1>
-    <h2>PokeXGames • Shiny Luxray</h2>
 
-    <img src="assets/shiny-luxray.png" alt="Shiny Luxray" class="poke-img" />
+<div class="container">
 
-    <table>
-      <tr>
-        <td>📅 Data</td>
-        <td>28/12/2025</td>
-      </tr>
-      <tr>
-        <td>⚡ Pokémon</td>
-        <td>Shiny Luxray</td>
-      </tr>
-      <tr>
-        <td>🏷️ Categoria</td>
-        <td>T1C</td>
-      </tr>
-      <tr>
-        <td>💰 Valor Estimado</td>
-        <td>4.500</td>
-      </tr>
-      <tr>
-        <td>💎 Diamonds Envolvidos</td>
-        <td>1250</td>
-      </tr>
-      <tr>
-        <td>🔁 Utilização</td>
-        <td>Usado como parte do pagamento do Shiny Dragonair</td>
-      </tr>
-      <tr>
-        <td>📝 Observações</td>
-        <td>Shiny Luxray entregue + 1250 💎 + 1.57 KKK</td>
-      </tr>
-    </table>
+  <h1>⚡ Registro de Negociação</h1>
+  <h2>PokeXGames • Shiny Luxray</h2>
 
-    <a href="index.html" class="back">⬅ Voltar ao menu</a>
+  <img src="assets/shiny-luxray.png" alt="Shiny Luxray">
 
-    <div class="footer">
-      Registro atemporal de negociação • PokeXGames
-    </div>
+  <table>
+    <tr>
+      <td>📅 Data</td>
+      <td>27/09/2025</td>
+    </tr>
+
+    <tr>
+      <td>⚡ Pokémon</td>
+      <td>Shiny Luxray</td>
+    </tr>
+
+    <tr>
+      <td>🏷️ Categoria</td>
+      <td>T1C</td>
+    </tr>
+
+    <tr>
+      <td>💰 Valor Estimado (KK / R$)</td>
+      <td>155 KK • R$ 500</td>
+    </tr>
+
+    <tr>
+      <td>💰 Valor Final em R$</td>
+      <td>R$ 516</td>
+    </tr>
+
+    <tr>
+      <td>🔁 Utilização</td>
+      <td>Usado como parte do pagamento do Shiny Dragonair</td>
+    </tr>
+
+    <tr>
+      <td>📝 Observações</td>
+      <td>
+        Shiny Luxray entregue + 1250 💎 + 1.57 KKK
+      </td>
+    </tr>
+  </table>
+
+  <div class="footer">
+    Registro atemporal de negociação • PXG
   </div>
+
+  <a href="index.html">⬅ Voltar ao menu</a>
+
+</div>
+
 </body>
 </html>
