@@ -2,78 +2,78 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Shiny Machamp • Planejamento PXG</title>
+<title>Planejamento PXG</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #ff9800, #ffb74d);
-  color: #2b2b2b;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
 }
 
 .container {
-  max-width: 680px;
-  margin: 40px auto;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 28px;
-  border-radius: 18px;
-  box-shadow: 0 10px 35px rgba(0,0,0,0.35);
+  max-width: 720px;
+  margin: 50px auto;
+  padding: 30px;
+  text-align: center;
 }
 
 h1 {
-  text-align: center;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 h2 {
-  text-align: center;
   font-weight: normal;
   font-size: 1rem;
+  color: #b3d9ff;
   margin-top: 0;
-  color: #6d4c41;
+  margin-bottom: 30px;
 }
 
-img {
-  display: block;
-  margin: 22px auto;
-  max-width: 190px;
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 18px;
+.card {
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-td {
-  padding: 10px 8px;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.8);
 }
 
-td:first-child {
+.card img {
+  max-width: 120px;
+  margin-bottom: 14px;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #ffcc00, #ff9900);
+  color: #1a1a1a;
+  text-decoration: none;
   font-weight: bold;
-  width: 50%;
+  border-radius: 999px;
 }
 
-tr:last-child td {
-  border-bottom: none;
+.card a:hover {
+  opacity: 0.9;
 }
 
 .footer {
-  margin-top: 22px;
-  text-align: center;
+  margin-top: 40px;
   font-size: 0.9rem;
-  color: #6d4c41;
-}
-
-a {
-  display: block;
-  margin-top: 24px;
-  text-align: center;
-  color: #e65100;
-  text-decoration: none;
-  font-weight: bold;
+  color: #cfd8dc;
 }
 </style>
 </head>
@@ -82,53 +82,37 @@ a {
 
 <div class="container">
 
-<h1>👊 Registro de Planejamento</h1>
-<h2>PokeXGames • <strong>Shiny Machamp</strong></h2>
+<h1>📊 Planejamento PXG</h1>
+<h2>Registros • Negociações • Estratégia</h2>
 
-<img src="assets/shiny-machamp.gif" alt="Shiny Machamp">
+<div class="menu">
 
-<table>
-  <tr>
-    <td>📅 Data</td>
-    <td>21/07/2025</td>
-  </tr>
+  <!-- Dragonair -->
+  <div class="card">
+    <img src="assets/shiny-dragonair.gif" alt="Shiny Dragonair">
+    <h3>🐉 Shiny Dragonair</h3>
+    <a href="registro-shiny-dragonair.html">Abrir Registro</a>
+  </div>
 
-  <tr>
-    <td>👊 Pokémon</td>
-    <td>Shiny Machamp</td>
-  </tr>
+  <!-- Luxray -->
+  <div class="card">
+    <img src="assets/shiny-luxray.png" alt="Shiny Luxray">
+    <h3>⚡ Shiny Luxray</h3>
+    <a href="registro-shiny-luxray.html">Abrir Registro</a>
+  </div>
 
-  <tr>
-    <td>🏷️ Categoria</td>
-    <td>T1C</td>
-  </tr>
+  <!-- Machamp -->
+  <div class="card">
+    <img src="assets/shiny-machamp.gif" alt="Shiny Machamp">
+    <h3>👊 Shiny Machamp</h3>
+    <a href="registro-shiny-machamp.html">Abrir Registro</a>
+  </div>
 
-  <tr>
-    <td>💰 Valor Estimado (KK)</td>
-    <td>1 KKK</td>
-  </tr>
-
-  <tr>
-    <td>💵 Valor em R$</td>
-    <td>R$ 2.500 – 3.000</td>
-  </tr>
-
-  <tr>
-    <td>🔁 Utilização</td>
-    <td>Usado para realização de TM</td>
-  </tr>
-
-  <tr>
-    <td>📝 Observações</td>
-    <td>Foi entregue: 350 KK + 1100 💎 Diamonds</td>
-  </tr>
-</table>
-
-<div class="footer">
-👊 Registro estratégico • Planejamento PXG 👊
 </div>
 
-<a href="index.html">⬅ Voltar ao menu</a>
+<div class="footer">
+🔥 Planejamento estratégico • PXG • GitHub Pages 🔥
+</div>
 
 </div>
 
