@@ -2,141 +2,138 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Planejamento PXG</title>
+<title>Shiny Tangela • PXG</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: radial-gradient(circle at top, #1a237e, #000);
-  color: #fff;
+  background: linear-gradient(135deg, #1b5e20, #66bb6a);
+  color: #1b5e20;
+}
+
+.container {
+  max-width: 680px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.35);
 }
 
 h1 {
   text-align: center;
-  margin: 30px 0 10px;
+  margin-bottom: 4px;
 }
 
-p.subtitle {
+h2 {
   text-align: center;
-  margin-bottom: 30px;
-  color: #cfd8dc;
+  font-weight: normal;
+  font-size: 1rem;
+  margin-top: 0;
+  color: #2e7d32;
 }
 
-.menu {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
-  max-width: 1000px;
-  margin: 0 auto 60px;
-  padding: 0 20px;
-}
-
-.card {
-  border-radius: 20px;
-  padding: 22px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.85);
-}
-
-.card img {
-  max-width: 140px;
-  margin: 14px auto;
+img {
   display: block;
+  margin: 22px auto;
+  max-width: 190px;
 }
 
-.card h3 {
-  margin: 10px 0 16px;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
 }
 
-.card a {
-  display: inline-block;
-  padding: 10px 18px;
-  border-radius: 999px;
+td {
+  padding: 10px 8px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+td:first-child {
   font-weight: bold;
-  text-decoration: none;
+  width: 50%;
 }
 
-/* CORES DOS BOTÕES */
-
-.dragonair {
-  background: linear-gradient(135deg, #f9d423, #ffb347);
-  color: #2b2b2b;
-}
-.dragonair a {
-  background: #fff;
-  color: #ff9800;
+tr:last-child td {
+  border-bottom: none;
 }
 
-.luxray {
-  background: linear-gradient(135deg, #0d47a1, #102027);
-  color: #e3f2fd;
-}
-.luxray a {
-  background: #e3f2fd;
-  color: #0d47a1;
+.footer {
+  margin-top: 22px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #33691e;
 }
 
-.machamp {
-  background: linear-gradient(135deg, #ff9800, #bf360c);
-  color: #fff3e0;
-}
-.machamp a {
-  background: #fff3e0;
-  color: #bf360c;
-}
-
-.tangela {
-  background: linear-gradient(135deg, #1b5e20, #66bb6a);
-  color: #e8f5e9;
-}
-.tangela a {
-  background: #e8f5e9;
+a {
+  display: block;
+  margin-top: 24px;
+  text-align: center;
   color: #1b5e20;
+  text-decoration: none;
+  font-weight: bold;
 }
 </style>
 </head>
 
 <body>
 
-<h1>📊 Planejamento PXG</h1>
-<p class="subtitle">Registros estratégicos de negociações • PokéXGames</p>
+<div class="container">
 
-<div class="menu">
+<h1>🌿 Registro de Negociação</h1>
+<h2>PokeXGames • <strong>Shiny Tangela</strong></h2>
 
-  <!-- DRAGONAIR -->
-  <div class="card dragonair">
-    <img src="assets/shiny-dragonair.gif" alt="Shiny Dragonair">
-    <h3>🐉 Shiny Dragonair</h3>
-    <a href="registro-shiny-dragonair.html">Ver Registro</a>
-  </div>
+<img src="assets/shiny-tangela.gif" alt="Shiny Tangela">
 
-  <!-- LUXRAY -->
-  <div class="card luxray">
-    <img src="assets/shiny-luxray.gif" alt="Shiny Luxray">
-    <h3>⚡ Shiny Luxray</h3>
-    <a href="registro-shiny-luxray.html">Ver Registro</a>
-  </div>
+<table>
+  <tr>
+    <td>📅 Data</td>
+    <td>13/10/2024</td>
+  </tr>
 
-  <!-- MACHAMP -->
-  <div class="card machamp">
-    <img src="assets/shiny-machamp.gif" alt="Shiny Machamp">
-    <h3>👊 Shiny Machamp</h3>
-    <a href="registro-shiny-machamp.html">Ver Registro</a>
-  </div>
+  <tr>
+    <td>🌿 Pokémon</td>
+    <td>Shiny Tangela</td>
+  </tr>
 
-  <!-- TANGELA -->
-  <div class="card tangela">
-    <img src="assets/shiny-tangela.gif" alt="Shiny Tangela">
-    <h3>🌿 Shiny Tangela</h3>
-    <a href="registro-shiny-tangela.html">Ver Registro</a>
-  </div>
+  <tr>
+    <td>🏷️ Categoria</td>
+    <td>T1C</td>
+  </tr>
+
+  <tr>
+    <td>💰 Valor Pago</td>
+    <td>30–50 KK + Mega Glalie</td>
+  </tr>
+
+  <tr>
+    <td>💲 Preço por KK</td>
+    <td>R$ 3,50</td>
+  </tr>
+
+  <tr>
+    <td>💵 Valor Total</td>
+    <td>R$ 550–560</td>
+  </tr>
+
+  <tr>
+    <td>🔁 Origem</td>
+    <td>Negociação envolvendo Mega Glalie ❄️</td>
+  </tr>
+
+  <tr>
+    <td>📝 Observações</td>
+    <td>Registro histórico de conquista pessoal no PXG</td>
+  </tr>
+</table>
+
+<div class="footer">
+🌿 Registro histórico • Planejamento PXG 🌿
+</div>
+
+<a href="index.html">⬅ Voltar ao menu</a>
 
 </div>
 
