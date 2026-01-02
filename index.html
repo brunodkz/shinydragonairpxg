@@ -8,81 +8,74 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: radial-gradient(circle at top, #1a237e, #000);
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: #ffffff;
 }
 
 .container {
-  max-width: 760px;
-  margin: 60px auto;
-  background: rgba(0, 0, 0, 0.55);
-  padding: 36px;
-  border-radius: 22px;
-  box-shadow: 0 14px 45px rgba(0,0,0,0.65);
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 h2 {
   text-align: center;
   font-weight: normal;
   font-size: 1rem;
+  color: #b3d9ff;
   margin-top: 0;
-  color: #b3e5fc;
+  margin-bottom: 40px;
 }
 
-.menu {
+.cards {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 18px;
-  margin-top: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
 }
 
 .card {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  padding: 18px 22px;
+  background: rgba(0,0,0,0.45);
   border-radius: 18px;
+  padding: 20px;
+  text-align: center;
   text-decoration: none;
   color: #ffffff;
-  font-weight: bold;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-}
-
-/* Dragonair */
-.dragonair {
-  background: linear-gradient(135deg, #f9d423, #ffb347);
-  color: #2b2b2b;
-}
-
-/* Luxray */
-.luxray {
-  background: linear-gradient(135deg, #0d47a1, #1565c0);
-}
-
-/* Tangela */
-.tangela {
-  background: linear-gradient(135deg, #1b5e20, #66bb6a);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.7);
 }
 
 .card img {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-  filter: drop-shadow(0 6px 10px rgba(0,0,0,0.45));
+  max-width: 140px;
+  margin-bottom: 14px;
 }
 
+.card h3 {
+  margin: 10px 0 6px;
+}
+
+.card span {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* Cores individuais */
+.dragonair { border-top: 6px solid #ffb347; }
+.luxray    { border-top: 6px solid #1565c0; }
+.tangela   { border-top: 6px solid #66bb6a; }
+.machamp   { border-top: 6px solid #ff9800; }
+
 .footer {
-  margin-top: 36px;
+  margin-top: 40px;
   text-align: center;
   font-size: 0.9rem;
   color: #cfd8dc;
@@ -97,27 +90,36 @@ h2 {
 <h1>📘 Planejamento PXG</h1>
 <h2>Registros Históricos de Conquistas Shiny</h2>
 
-<div class="menu">
+<div class="cards">
 
   <a class="card dragonair" href="registro-shiny-dragonair.html">
     <img src="assets/shiny-dragonair.gif" alt="Shiny Dragonair">
-    🐉 Shiny Dragonair • T1B
+    <h3>🐉 Shiny Dragonair</h3>
+    <span>Categoria T1B</span>
   </a>
 
   <a class="card luxray" href="registro-shiny-luxray.html">
     <img src="assets/shiny-luxray.png" alt="Shiny Luxray">
-    ⚡ Shiny Luxray • T1C
+    <h3>⚡ Shiny Luxray</h3>
+    <span>Categoria T1C</span>
   </a>
 
   <a class="card tangela" href="registro-shiny-tangela.html">
     <img src="assets/shiny-tangela.gif" alt="Shiny Tangela">
-    🌿 Shiny Tangela • T1C
+    <h3>🌿 Shiny Tangela</h3>
+    <span>Categoria T1C</span>
+  </a>
+
+  <a class="card machamp" href="registro-shiny-machamp.html">
+    <img src="assets/shiny-machamp.gif" alt="Shiny Machamp">
+    <h3>💪 Shiny Machamp</h3>
+    <span>Categoria T1C</span>
   </a>
 
 </div>
 
 <div class="footer">
-🔥 Sistema de registros • Planejamento PXG • GitHub Pages 🔥
+🔥 Planejamento PXG • Cards interativos • GitHub Pages 🔥
 </div>
 
 </div>
