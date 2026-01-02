@@ -2,49 +2,39 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Planejamento PXG • Registros Shiny</title>
+<title>Planejamento PXG</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
   color: #ffffff;
+}
+
+header {
+  text-align: center;
+  padding: 30px 10px;
+}
+
+header h1 {
+  margin: 0;
 }
 
 .container {
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 20px;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 6px;
-}
-
-h2 {
-  text-align: center;
-  font-weight: normal;
-  font-size: 1rem;
-  color: #b3d9ff;
-  margin-top: 0;
-  margin-bottom: 40px;
-}
-
-.cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
 }
 
 .card {
-  background: rgba(0,0,0,0.45);
+  background: rgba(255,255,255,0.08);
   border-radius: 18px;
-  padding: 20px;
+  padding: 18px;
   text-align: center;
-  text-decoration: none;
-  color: #ffffff;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -56,71 +46,88 @@ h2 {
 
 .card img {
   max-width: 140px;
-  margin-bottom: 14px;
+  margin: 12px auto;
+  display: block;
 }
 
-.card h3 {
+.card h2 {
   margin: 10px 0 6px;
 }
 
-.card span {
-  font-size: 0.9rem;
-  opacity: 0.85;
+.card a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 18px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
 }
 
-/* Cores individuais */
-.dragonair { border-top: 6px solid #ffb347; }
-.luxray    { border-top: 6px solid #1565c0; }
-.tangela   { border-top: 6px solid #66bb6a; }
-.machamp   { border-top: 6px solid #ff9800; }
+/* BOTÕES */
+.btn-dragonair {
+  background: linear-gradient(135deg, #f9d423, #ffb347);
+  color: #2b2b2b;
+}
 
-.footer {
-  margin-top: 40px;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #cfd8dc;
+.btn-luxray {
+  background: linear-gradient(135deg, #0a1a2f, #123b66);
+}
+
+.btn-machamp {
+  background: linear-gradient(135deg, #ff9800, #e65100);
+}
+
+.btn-tangela {
+  background: linear-gradient(135deg, #2e7d32, #66bb6a);
 }
 </style>
 </head>
 
 <body>
 
+<header>
+  <h1>📊 Planejamento PXG</h1>
+  <p>Registros históricos de negociações</p>
+</header>
+
 <div class="container">
 
-<h1>📘 Planejamento PXG</h1>
-<h2>Registros Históricos de Conquistas Shiny</h2>
-
-<div class="cards">
-
-  <a class="card dragonair" href="registro-shiny-dragonair.html">
+  <!-- DRAGONAIR -->
+  <div class="card">
     <img src="assets/shiny-dragonair.gif" alt="Shiny Dragonair">
-    <h3>🐉 Shiny Dragonair</h3>
-    <span>Categoria T1B</span>
-  </a>
+    <h2>🐉 Shiny Dragonair</h2>
+    <a class="btn-dragonair" href="registro-shiny-dragonair.html">
+      Ver registro
+    </a>
+  </div>
 
-  <a class="card luxray" href="registro-shiny-luxray.html">
+  <!-- LUXRAY (PNG APLICADO AQUI) -->
+  <div class="card">
     <img src="assets/shiny-luxray.png" alt="Shiny Luxray">
-    <h3>⚡ Shiny Luxray</h3>
-    <span>Categoria T1C</span>
-  </a>
+    <h2>⚡ Shiny Luxray</h2>
+    <a class="btn-luxray" href="registro-shiny-luxray.html">
+      Ver registro
+    </a>
+  </div>
 
-  <a class="card tangela" href="registro-shiny-tangela.html">
-    <img src="assets/shiny-tangela.gif" alt="Shiny Tangela">
-    <h3>🌿 Shiny Tangela</h3>
-    <span>Categoria T1C</span>
-  </a>
-
-  <a class="card machamp" href="registro-shiny-machamp.html">
+  <!-- MACHAMP -->
+  <div class="card">
     <img src="assets/shiny-machamp.gif" alt="Shiny Machamp">
-    <h3>💪 Shiny Machamp</h3>
-    <span>Categoria T1C</span>
-  </a>
+    <h2>👊 Shiny Machamp</h2>
+    <a class="btn-machamp" href="registro-shiny-machamp.html">
+      Ver registro
+    </a>
+  </div>
 
-</div>
-
-<div class="footer">
-🔥 Planejamento PXG • Cards interativos • GitHub Pages 🔥
-</div>
+  <!-- TANGELA -->
+  <div class="card">
+    <img src="assets/shiny-tangela.gif" alt="Shiny Tangela">
+    <h2>🌿 Shiny Tangela</h2>
+    <a class="btn-tangela" href="registro-shiny-tangela.html">
+      Ver registro
+    </a>
+  </div>
 
 </div>
 
