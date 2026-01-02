@@ -5,13 +5,21 @@
 <title>📘 Planejamento PXG</title>
 
 <style>
+
+/* 🔥 CORREÇÃO DEFINITIVA DO BACKGROUND 🔥 */
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: url("pokeballs-bg-v2.png") repeat;
+  background: url("assets/pokeballs-bg-v2.png") repeat;
   background-size: 300px;
+  min-height: 100vh;
 }
 
+/* HEADER EM BALÃO */
 .header {
   max-width: 900px;
   margin: 30px auto;
@@ -31,6 +39,7 @@ body {
   color: #444;
 }
 
+/* GRID DE CARDS */
 .grid {
   max-width: 1000px;
   margin: 30px auto;
@@ -40,6 +49,7 @@ body {
   padding: 10px;
 }
 
+/* CARD PADRÃO */
 .card {
   background: rgba(255,255,255,0.9);
   border-radius: 18px;
@@ -62,6 +72,7 @@ body {
   margin: 8px 0;
 }
 
+/* BOTÕES */
 .card a {
   display: inline-block;
   margin-top: 10px;
@@ -72,11 +83,12 @@ body {
   color: white;
 }
 
-/* CORES DOS BOTÕES */
+/* 🎨 CORES DOS BOTÕES */
 .dragonair a { background: #fbc02d; color: #2b2b2b; }
 .luxray a    { background: #0d2a4a; }
 .machamp a   { background: #e65100; }
 .tangela a   { background: #2e7d32; }
+
 </style>
 </head>
 
@@ -89,28 +101,28 @@ body {
 
 <div class="grid">
 
-  <!-- SHINY DRAGONAIR -->
+  <!-- 🐉 SHINY DRAGONAIR -->
   <div class="card dragonair">
     <img src="assets/shiny-dragonair.gif" alt="Shiny Dragonair">
     <h3>🐉 Shiny Dragonair</h3>
     <a href="registro-shiny-dragonair.html">Abrir registro</a>
   </div>
 
-  <!-- SHINY LUXRAY (GIF FUNCIONANDO) -->
+  <!-- ⚡ SHINY LUXRAY -->
   <div class="card luxray">
     <img src="assets/shiny-luxray.gif" alt="Shiny Luxray">
     <h3>⚡ Shiny Luxray</h3>
     <a href="registro-shiny-luxray.html">Abrir registro</a>
   </div>
 
-  <!-- SHINY MACHAMP -->
+  <!-- 👊 SHINY MACHAMP -->
   <div class="card machamp">
     <img src="assets/shiny-machamp.gif" alt="Shiny Machamp">
     <h3>👊 Shiny Machamp</h3>
     <a href="registro-shiny-machamp.html">Abrir registro</a>
   </div>
 
-  <!-- SHINY TANGELA -->
+  <!-- 🌿 SHINY TANGELA -->
   <div class="card tangela">
     <img src="assets/shiny-tangela.gif" alt="Shiny Tangela">
     <h3>🌿 Shiny Tangela</h3>
