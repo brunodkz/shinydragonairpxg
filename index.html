@@ -2,28 +2,28 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Shiny Tangela • PXG</title>
+<title>Planejamento PXG • Registros Shiny</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #1b5e20, #66bb6a);
-  color: #1b5e20;
+  background: radial-gradient(circle at top, #1a237e, #000);
+  color: #ffffff;
 }
 
 .container {
-  max-width: 680px;
-  margin: 40px auto;
-  background: rgba(255, 255, 255, 0.92);
-  padding: 28px;
-  border-radius: 18px;
-  box-shadow: 0 10px 35px rgba(0,0,0,0.35);
+  max-width: 760px;
+  margin: 60px auto;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 36px;
+  border-radius: 22px;
+  box-shadow: 0 14px 45px rgba(0,0,0,0.65);
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 h2 {
@@ -31,49 +31,61 @@ h2 {
   font-weight: normal;
   font-size: 1rem;
   margin-top: 0;
-  color: #2e7d32;
+  color: #b3e5fc;
 }
 
-img {
-  display: block;
-  margin: 22px auto;
-  max-width: 190px;
+.menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  margin-top: 30px;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 18px;
-}
-
-td {
-  padding: 10px 8px;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-
-td:first-child {
+.card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 22px;
+  border-radius: 18px;
+  text-decoration: none;
+  color: #ffffff;
   font-weight: bold;
-  width: 50%;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-tr:last-child td {
-  border-bottom: none;
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* Dragonair */
+.dragonair {
+  background: linear-gradient(135deg, #f9d423, #ffb347);
+  color: #2b2b2b;
+}
+
+/* Luxray */
+.luxray {
+  background: linear-gradient(135deg, #0d47a1, #1565c0);
+}
+
+/* Tangela */
+.tangela {
+  background: linear-gradient(135deg, #1b5e20, #66bb6a);
+}
+
+.card img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 10px rgba(0,0,0,0.45));
 }
 
 .footer {
-  margin-top: 22px;
+  margin-top: 36px;
   text-align: center;
   font-size: 0.9rem;
-  color: #33691e;
-}
-
-a {
-  display: block;
-  margin-top: 24px;
-  text-align: center;
-  color: #1b5e20;
-  text-decoration: none;
-  font-weight: bold;
+  color: #cfd8dc;
 }
 </style>
 </head>
@@ -82,58 +94,31 @@ a {
 
 <div class="container">
 
-<h1>🌿 Registro de Negociação</h1>
-<h2>PokeXGames • <strong>Shiny Tangela</strong></h2>
+<h1>📘 Planejamento PXG</h1>
+<h2>Registros Históricos de Conquistas Shiny</h2>
 
-<img src="assets/shiny-tangela.gif" alt="Shiny Tangela">
+<div class="menu">
 
-<table>
-  <tr>
-    <td>📅 Data</td>
-    <td>13/10/2024</td>
-  </tr>
+  <a class="card dragonair" href="registro-shiny-dragonair.html">
+    <img src="assets/shiny-dragonair.gif" alt="Shiny Dragonair">
+    🐉 Shiny Dragonair • T1B
+  </a>
 
-  <tr>
-    <td>🌿 Pokémon</td>
-    <td>Shiny Tangela</td>
-  </tr>
+  <a class="card luxray" href="registro-shiny-luxray.html">
+    <img src="assets/shiny-luxray.png" alt="Shiny Luxray">
+    ⚡ Shiny Luxray • T1C
+  </a>
 
-  <tr>
-    <td>🏷️ Categoria</td>
-    <td>T1C</td>
-  </tr>
+  <a class="card tangela" href="registro-shiny-tangela.html">
+    <img src="assets/shiny-tangela.gif" alt="Shiny Tangela">
+    🌿 Shiny Tangela • T1C
+  </a>
 
-  <tr>
-    <td>💰 Valor Pago</td>
-    <td>30–50 KK + Mega Glalie</td>
-  </tr>
-
-  <tr>
-    <td>💲 Preço por KK</td>
-    <td>R$ 3,50</td>
-  </tr>
-
-  <tr>
-    <td>💵 Valor Total</td>
-    <td>R$ 550–560</td>
-  </tr>
-
-  <tr>
-    <td>🔁 Origem</td>
-    <td>Negociação envolvendo Mega Glalie ❄️</td>
-  </tr>
-
-  <tr>
-    <td>📝 Observações</td>
-    <td>Registro histórico de conquista pessoal no PXG</td>
-  </tr>
-</table>
-
-<div class="footer">
-🌿 Registro histórico • Planejamento PXG 🌿
 </div>
 
-<a href="index.html">⬅ Voltar ao menu</a>
+<div class="footer">
+🔥 Sistema de registros • Planejamento PXG • GitHub Pages 🔥
+</div>
 
 </div>
 
